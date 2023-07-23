@@ -1,0 +1,19 @@
+You are given a number 'n'.Return number of digits in ‘n’.
+
+#include <iostream>
+using namespace std;
+
+int numb(int n){
+     if(n==0){
+        return 0 ;
+     }
+     return (1 + numb(n/10));
+
+}
+
+int main(){
+int n;
+cin >>n;
+int a = numb(n);
+cout<<a<<endl;
+}
